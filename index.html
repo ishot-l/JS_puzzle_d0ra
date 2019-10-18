@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 
 <body>
@@ -14,6 +15,7 @@
             <div class="App">
                 <div class="TopWindow">
                     <div class="Screen">
+                        <span class="fas fa-volume-mute SoundButton" ontouchstart=""></span>
                         あ
                     </div>
                 </div>
@@ -24,7 +26,11 @@
         </div>
 
     </div>
+    <audio id="sound-drop" preload="auto">
+        <source src="SE/drop.wav" type="audio/wav">
+    </audio>
     <script type="text/javascript" src="index.js"></script>
+    
 </body>
 
 </html>
