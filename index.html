@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
@@ -15,12 +15,19 @@
             <div class="App">
                 <div class="TopWindow">
                     <div class="Screen">
+                        <div class="ReloadButton" ontouchstart="">はじめから</div>
                         <span class="fas fa-volume-mute SoundButton" ontouchstart=""></span>
-                        あ
+                        <div class="Characters">
+                        </div>
                     </div>
                 </div>
                 <div id="BottomWindow">
     
+                </div>
+                <div class="ModalWindow">
+                    <p class="title"></p>
+                    <p class="description"></p>
+                    <span class="CloseButton">とじる</span>
                 </div>
             </div>
         </div>
@@ -28,8 +35,14 @@
     </div>
     <audio id="sound-drop" preload="auto">
         <source src="SE/drop.wav" type="audio/wav">
+        <source src="SE/flying_pan.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="sound-combo" preload="auto">
+        <source src="SE/game_explosion7.mp3" type="audio/mp3">
     </audio>
     <script type="text/javascript" src="index.js"></script>
+
     
 </body>
 

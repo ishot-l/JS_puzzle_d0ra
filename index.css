@@ -28,9 +28,9 @@ body {
     margin: 0 auto;
         
     background-color: black;
-    }
+}
 
-    .App {
+.App {
     position: relative;
 
     /* heightの3%下に下げても隠れることはないため */
@@ -43,9 +43,9 @@ body {
     padding-top: 170%;
 
     background-color: black;
-    }
+}
 
-    .TopWindow {
+.TopWindow {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,9 +53,9 @@ body {
     height: 50%;
     width: 100%;
     background-color: black;
-    }
+}
 
-    #BottomWindow {
+#BottomWindow {
     position: absolute;
     top: 50%;
     left: 0;
@@ -63,13 +63,66 @@ body {
     height: 50%;
     width: 100%;
     background-color: black;
-    }
+}
 
-    .Screen {
+.ModalWindow {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+
+    width: 80%;
+    height: 40%;
+
+    z-index: 100;
+    background-color: burlywood;
+
+    text-align: center;
+    border-radius: 10px;
+
+    display: none;
+}
+
+.ModalWindow p span{
+    display: inline-block;
+}
+
+.ModalWindow .title{
+    top: 1px;
+    font-size: 20px;
+    color: darkolivegreen;
+    margin: 20px;
+}
+
+
+.ModalWindow .CloseButton{
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, 0);
+
+    color: rgb(255, 228, 206);
+    background-color: rgb(131, 58, 5);
+    padding: 5px 10px;
+    border-radius: 4px;
+
+    box-shadow: 4px 4px;
+}
+
+.ModalWindow .CloseButton:active {
+    
+
+    transform: translate(-50%, 0) translate(4px, 4px);
+    box-shadow: 0 0;
+}
+
+
+
+.Screen {
     width: 100%;
     height: 100%;
     background-color: chartreuse;
-    }
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .SoundButton {
     display: block;
@@ -89,7 +142,42 @@ body {
     box-shadow: 0 0;
 }
 
-    .Puzzle {
+.ReloadButton {
+    display: block;
+    float: left;
+    background-color: white;
+    font-size: 10px;
+    line-height: 20px;
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 4px 4px;
+}
+
+.ReloadButton:active{
+    transform: translate(4px, 4px);
+    box-shadow: 0 0;
+}
+
+.Characters{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background-color: brown;
+}
+
+.Character {
+    display: block;
+    height: 100%;
+    width: 16.667%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Puzzle {
     width: 100%;
     height: 100%;
     background-color: darksalmon;
@@ -143,4 +231,10 @@ body {
 
 .Selected {
     opacity: 0.2;
+}
+
+.ComboCounter{
+    position: absolute;
+    color: white;
+    white-space: nowrap;
 }
